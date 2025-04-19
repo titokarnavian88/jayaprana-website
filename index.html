@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaya Prana</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Font for Custom Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-semibold text-blue-600">Jaya Prana</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#booking" class="hover:text-blue-600">Booking</a>
+        <a href="#activities" class="hover:text-blue-600">Activities</a>
+        <a href="#news" class="hover:text-blue-600">News</a>
+        <a href="#account" class="hover:text-blue-600">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://jayaprana.id/assets/banner.jpg');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg text-white text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Jaya Prana</h2>
+      <p class="mb-6">Discover the legend. Explore the beauty of Bali.</p>
+      <a href="#booking" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-20 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Booking</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Full Name" class="p-3 border rounded">
+        <input type="email" placeholder="Email" class="p-3 border rounded">
+        <input type="date" class="p-3 border rounded">
+        <select class="p-3 border rounded">
+          <option>Select Package</option>
+          <option>Tour Only</option>
+          <option>Tour + Guide</option>
+        </select>
+        <textarea placeholder="Additional Notes" class="p-3 border rounded md:col-span-2"></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700 md:col-span-2">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center">Activities</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded p-6 text-center">
+          <img src="https://jayaprana.id/assets/activity1.jpg" alt="Activity 1" class="mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Cultural Tour</h3>
+          <p>Explore the legend of Jaya Prana and Balinese culture.</p>
+        </div>
+        <div class="bg-white shadow rounded p-6 text-center">
+          <img src="https://jayaprana.id/assets/activity2.jpg" alt="Activity 2" class="mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Forest Walk</h3>
+          <p>Enjoy the peaceful forest and natural beauty of Bali Barat.</p>
+        </div>
+        <div class="bg-white shadow rounded p-6 text-center">
+          <img src="https://jayaprana.id/assets/activity3.jpg" alt="Activity 3" class="mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Photography</h3>
+          <p>Capture unforgettable moments surrounded by nature and history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center">News & Updates</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://jayaprana.id/assets/news1.jpg" class="rounded mb-4" alt="News 1">
+          <h3 class="font-bold text-lg mb-2">New Tour Packages</h3>
+          <p>Discover our newest experiences in the sacred Jaya Prana forest.</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://jayaprana.id/assets/news2.jpg" class="rounded mb-4" alt="News 2">
+          <h3 class="font-bold text-lg mb-2">Cultural Festival</h3>
+          <p>Annual festival celebrating local legends and Balinese culture.</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://jayaprana.id/assets/news3.jpg" class="rounded mb-4" alt="News 3">
+          <h3 class="font-bold text-lg mb-2">Eco-Tourism Growth</h3>
+          <p>How sustainable tourism is preserving Bali’s natural beauty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account Section -->
+  <section id="account" class="py-20">
+    <div class="max-w-xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">User Account</h2>
+      <p class="mb-4">Login to manage your bookings or create a new account.</p>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded">
+        <input type="password" placeholder="Password" class="w-full p-3 border rounded">
+        <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Jaya Prana. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
